@@ -211,14 +211,6 @@ plt.close()
 
 # -----------------------------------
 
-# Transform the training data so that the tree
-
-# can be visualized with feature names.
-
-X_train_transformed = pipeline.named_steps[
-"preprocessor"
-].transform(X_train)
-
 feature_names = pipeline.named_steps[
 "preprocessor"
 ].get_feature_names_out()
