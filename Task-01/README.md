@@ -38,7 +38,7 @@ The following steps were performed:
 |    7 | Brazil             |   211,998,573 |
 |    8 | Bangladesh         |   173,562,364 |
 |    9 | Russian Federation |   143,533,851 |
-|   10 | Ethiopia           |   132,059,767 |
+|   10 | Ethiopia            |   132,059,767 |
 
 ## Key Observations
 
@@ -62,7 +62,6 @@ outputs/top_10_population.png
 
 * Python
 * Pandas
-* NumPy
 * Matplotlib
 * Seaborn
 
