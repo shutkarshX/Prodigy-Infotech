@@ -1,6 +1,8 @@
 import pandas as pd
 
-source_file = r"C:\Users\Roger\.cache\kagglehub\datasets\sobhanmoosavi\us-accidents\versions\13\US_Accidents_March23.csv"
+source_file = input(
+    "Enter the path to US_Accidents_March23.csv: "
+).strip()
 
 output_file = "dataset/US_Accidents_sample.csv"
 
@@ -21,7 +23,6 @@ for chunk in pd.read_csv(source_file, chunksize=25000):
         break
 
 df = pd.concat(chunks, ignore_index=True).head(target_rows)
-
 df.to_csv(output_file, index=False)
 
 print("\nSample created successfully!")
