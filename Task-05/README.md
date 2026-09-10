@@ -10,7 +10,7 @@ The analysis uses the US Accidents dataset and focuses on identifying accident h
 
 Dataset: US Accidents
 
-Source: Kaggle - US Accidents Dataset
+Source: [Official US Accidents Dataset on Kaggle](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
 
 The original dataset contains millions of accident records across the United States with information about:
 
@@ -29,7 +29,17 @@ The original dataset contains millions of accident records across the United Sta
 - Crossings
 - Other road-related conditions
 
-For this project, a 100,000-record sample was extracted from the official dataset to keep the analysis lightweight and suitable for local execution.
+### Full Dataset
+
+The complete US Accidents dataset is several gigabytes in size and is therefore not included in this GitHub repository. The full dataset can be obtained from the official Kaggle source above.
+
+### Dataset Used for Analysis
+
+For this project, a 100,000-record sample was extracted from the official dataset to keep the analysis lightweight and suitable for local execution. The sample is included in this repository at:
+
+`dataset/US_Accidents_sample.csv`
+
+The included `create_sample.py` script can be used to recreate the 100,000-record sample from the downloaded full dataset.
 
 ## Technologies Used
 
@@ -148,3 +158,4 @@ Task-05/
     ├── road_factors.png
     ├── severity_by_time.png
     └── top_states.png
+```
